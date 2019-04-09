@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:showIn="navigation_view">
+
+    <group>
+        <item
+                android:id="@+id/nav_camera"
+                android:title="HISTORY"/>
+        <item
+                android:id="@+id/nav_gallery"
+                android:title="ADD CARD"/>
+        <item
+                android:id="@+id/nav_slideshow"
+                android:title="HOW TO"/>
+        <item
+                android:id="@+id/nav_manage"
+                android:title="FAQ"/>
+        <item
+                android:id="@+id/nav_feedback"
+                android:title="FEEDBACK"/>
+    </group>
+
+</menu>

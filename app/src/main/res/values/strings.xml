@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">parkingSG</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="carpark_placeholder">Select Car Park</string>
+    <string name="vehicle_placeholder">Enter Vehicle Details</string>
+    <string name="sessionDuration">30MIN</string>
+    <string name="sessionEnd">End \n-</string>
+    <string name="totalCost">Total Cost \n-</string>
+    <string name="main_validation_message">Please enter car park and vehicle to proceed</string>
+    <string name="main_button_next">NEXT STEP</string>
+    <string name="selectVehicleText"/>
+    <string name="delVehicleConDesc">delete vehicle</string>
+    <string name="use_a_new_vehicle">Use a New Vehicle</string>
+    <string name="vehicle_plate_hint">Enter vehicle number plate</string>
+    <string name="button_add">Add</string>
+    <string name="empty_not_saved">not saved</string>
+    <string name="title_activity_maps">Map</string>
+</resources>

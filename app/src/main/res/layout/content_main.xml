@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:showIn="@layout/app_bar_main"
+        tools:context=".MainActivity" android:background="@android:color/white">
+    <include android:layout_width="match_parent" android:layout_height="240dp" layout="@layout/activity_maps"
+             android:layout_marginTop="8dp"
+             app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+             android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+             android:id="@+id/include"
+             android:layout_marginBottom="8dp" app:layout_constraintBottom_toTopOf="@+id/carpark"
+    />
+    <Button
+            android:text="@string/carpark_placeholder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/carpark"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            android:drawableStart="@drawable/ic_room_cyan_600_24dp" android:textAlignment="textStart"
+            android:textColor="@android:color/darker_gray"
+            android:background="@android:color/white"
+            style="@android:style/Widget.DeviceDefault.Button.Borderless" android:onClick="launchMap"
+            android:layout_marginBottom="8dp" app:layout_constraintBottom_toTopOf="@+id/car"/>
+    <Button
+            android:text="@string/vehicle_placeholder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/car"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            android:drawableStart="@drawable/ic_directions_car_cyan_600_24dp" android:textAlignment="textStart"
+            android:textColor="@android:color/darker_gray"
+            android:background="@android:color/white"
+            style="@android:style/Widget.DeviceDefault.Button.Borderless"
+            android:layout_marginBottom="8dp" app:layout_constraintBottom_toTopOf="@+id/linearLayout1"/>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            android:background="@android:color/white" android:id="@+id/linearLayout1"
+            android:layout_marginBottom="8dp" app:layout_constraintBottom_toTopOf="@+id/linearLayout2">
+        <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" app:srcCompat="@drawable/ic_remove_indigo_900_48dp"
+                android:id="@+id/imageButton" android:layout_weight=".25" android:cropToPadding="false"
+                android:contentDescription="decrease duration" android:background="@android:color/white"
+                android:onClick="decreaseDuration"/>
+        <TextView
+                android:text="@string/sessionDuration"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" android:id="@+id/displayDuration" android:layout_weight="1"
+                android:textColor="#1A237E" android:gravity="center" android:textSize="40sp"/>
+        <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" app:srcCompat="@drawable/ic_add_indigo_900_48dp"
+                android:id="@+id/imageButton3" android:layout_weight=".25"
+                android:contentDescription="increase duration" android:background="@android:color/white"
+                android:onClick="increaseDuration" android:longClickable="true"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            android:id="@+id/linearLayout2"
+            android:background="@android:color/white"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/instructionalText1">
+        <TextView
+                android:text="@string/sessionEnd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/sessionEnd" android:layout_weight="1"
+                android:gravity="center"/>
+        <TextView
+                android:text="@string/totalCost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/totalCost" android:layout_weight="1"
+                android:gravity="center"/>
+    </LinearLayout>
+    <TextView
+            android:text="@string/main_validation_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/instructionalText1"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            android:textAlignment="center"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/buttonNext1"/>
+    <Button
+            android:text="@string/main_button_next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonNext1"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+</android.support.constraint.ConstraintLayout>
