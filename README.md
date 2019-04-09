@@ -1,9 +1,7 @@
 # LearnAndroid_1
 This is a learning experience by mimicking a live mobile app's front end interface.
 
-This project is targeted at Android 9.0(Pie) API 28.
-
-I am using Kotlin 1.3 and Android Studio 3.
+This project is targeted at Android 9.0(Pie) API 28 written in Kotlin 1.3 on Android Studio 3.
 
 I've installed
 - Android Material Design Icon Generator v1.9 plugin
